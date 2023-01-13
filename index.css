@@ -1,0 +1,149 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.container{
+    height: 98vh;
+    width: 98vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+ }
+
+    .content{
+        display: grid;
+        align-content: center;
+        height: 90%;
+        width: 80%;
+        grid-template-columns: repeat(1,4fr);
+        grid-template-rows: repeat(1,2fr);
+        grid-template-areas:
+        "one two three four"
+        "one five six seven"
+       ;
+       align-items: center;
+        
+    }
+
+    .div1 {
+        padding: 10px;
+        grid-area: one;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: hsl(246, 80%, 60%);
+ 
+     } 
+     
+    .div1 img{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        gap: 10px;
+    } 
+
+    .list{
+        background-color: hsl(235, 46%, 20%);
+        display: flex;
+        justify-items: flex-start;
+        border-radius: 10px;
+    }
+
+    .div2 {
+       padding: 5px;
+       grid-area: two;
+       justify-content: space-evenly;
+       width: 30%;
+       height: 50%;
+       display: flex;
+       flex-direction: column;
+       padding: 10px;
+       border-radius: 5px;
+       background-color: hsl(15, 100%, 70%)
+
+    }  
+    
+    .div2 img{
+        border: 0.1875rem solid white;
+        border-radius: 50%;
+        width: 50px;
+    } 
+
+    .div3 {
+        padding: 5px;
+        grid-area: three;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: hsl(195, 74%, 62%);
+ 
+     }  
+
+     .div3 img{
+        border: 0.1875rem solid white;
+        border-radius: 50%;
+        width: 4.375rem;
+        background-color: hsl(348, 100%, 68%)
+ 
+    } 
+     
+     .div4 {
+        padding: 5px;
+        grid-area: four;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: hsl(145, 58%,55%);
+ 
+     }  
+     
+     .div3 img{
+        border: 0.1875rem solid white;
+        border-radius: 50%;
+        width: 4.375rem;
+    } 
+     
+     .div5 {
+        padding: 5px;
+        grid-area: two;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color:hsl(264, 64%, 52%);
+ 
+     } 
+
+     .div5 img{
+        border: 0.1875rem solid white;
+        border-radius: 50%;
+        width: 4.375rem;
+    } 
+     
+     .div6 {
+        padding: 5px;
+        grid-area: two;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: hsl(43, 84%, 65%);
+ 
+     } 
+     
+     .div6 img{
+        border: 0.1875rem solid white;
+        border-radius: 50%;
+        width: 4.375rem;
+    } 
