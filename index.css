@@ -2,148 +2,381 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
-    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
 
 }
 
+
 .container{
-    height: 98vh;
-    width: 98vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    margin: auto;
+   width: 98vw;
+   height: 98vh;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   background-color: hsl(226, 43%, 10%);
+   font-family: "Rubik", sans-serif;
  }
 
     .content{
-        display: grid;
-        align-content: center;
-        height: 90%;
-        width: 80%;
-        grid-template-columns: repeat(1,4fr);
-        grid-template-rows: repeat(1,2fr);
-        grid-template-areas:
-        "one two three four"
-        "one five six seven"
-       ;
-       align-items: center;
+      width: 70vw;
+      height: 72vh;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      margin: 1.875rem auto;
+      gap: 1.875rem; 
+      background-color: hsl(226, 43%, 10%);
+      grid-template-areas:
+       "one two three four"
+      " one five six seven"
+      ;
         
     }
 
     .div1 {
-        padding: 10px;
-        grid-area: one;
-        width: 30%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: hsl(246, 80%, 60%);
+      grid-area: one;
+      
+      display: flex;
+      flex-direction: column;
+      border-top-left-radius:1em;
+      border-top-right-radius:1em;
+      border-radius: 2rem;
+      background-color: #1d204b;
+      
  
      } 
      
-    .div1 img{
-        display: flex;
-        width: 50px;
-        height: 50px;
-        gap: 10px;
-    } 
+    .profile img{
+      border-radius: 40px;
+      border: #ffff solid 3px;
+      box-shadow: 1px 1px 3px 0px;
+      width: 4.375rem;
+    }
+    
+    .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border-radius: 1em;
+      padding: 1.875rem 1.875rem 5rem;
+      background-color: #5746ea;
+    }
 
-    .list{
-        background-color: hsl(235, 46%, 20%);
-        display: flex;
-        justify-items: flex-start;
-        border-radius: 10px;
+    .profile-title,
+    .profile-name {
+      color: white;
+      font-weight: 300;
+    }
+
+    .profile-title {
+      color: #bbc0ff;
+      font-size: 0.938rem;
+      margin-left: 10px;
+    }
+
+    .profile-name{
+      font-size: 2.5rem;
+      margin-left: 10px
+    }
+
+    .profile > .list{
+      
+      
+      border-radius: 0.625rem;
+      background-color: #1d204b;
+    }
+
+    .list span{
+      font-family: "Rubik", sans-serif;
+      font-size: 1.063rem;
+      color: #7078c9;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      margin-left: 10px;
+      border: none;
+      background: none;
+      border: none;
+      background: none;
+    }
+
+    .grid-divs {
+      display: grid;
+      gap: 1.875rem;
     }
 
     .div2 {
-       padding: 5px;
+       
        grid-area: two;
-       justify-content: space-evenly;
-       width: 30%;
-       height: 50%;
-       display: flex;
-       flex-direction: column;
-       padding: 10px;
+       
        border-radius: 5px;
-       background-color: hsl(15, 100%, 70%)
+       background-image: url("images/icon-work.svg") ;
+       border-top-left-radius:1em;
+       border-top-right-radius:1em;
+       background-repeat: no-repeat;
+       background-position:right top;
+       background-color: hsl(15, 100%, 70%);
+       
+       
 
-    }  
-    
-    .div2 img{
-        border: 0.1875rem solid white;
-        border-radius: 50%;
-        width: 50px;
     } 
+    .work{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 10px;
+      background-color: hsl(235, 46%, 20%);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    } 
+    
+    
+
+    .work h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .work h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .work h4{
+      color: white;
+      padding-bottom: 15px;
+    }
 
     .div3 {
-        padding: 5px;
-        grid-area: three;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: hsl(195, 74%, 62%);
+      grid-area: three;
+      
+      border-radius: 5px;
+      background-image: url("images/icon-play.svg") ;
+      background-color: hsl(195, 74%, 62%);
+      border-top-left-radius:1em;
+       border-top-right-radius:1em;
+       background-repeat: no-repeat;
+       background-position:right top;
+        
  
-     }  
+     } 
+     
+     .play{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: hsl(235, 46%, 20%);
 
-     .div3 img{
-        border: 0.1875rem solid white;
-        border-radius: 50%;
-        width: 4.375rem;
-        background-color: hsl(348, 100%, 68%)
- 
-    } 
+     }
+
+     .play h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .play h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .play h4{
+      color: white;
+      padding-bottom: 10px;
+      padding-bottom: 15px;
+    }
+
+     
      
      .div4 {
-        padding: 5px;
-        grid-area: four;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: hsl(145, 58%,55%);
- 
+      grid-area: four;
+      
+      border-radius: 5px;
+      background-image: url("images/icon-study.svg") ;
+      background-color: hsl(348, 100%, 68%);
+      border-top-left-radius:1em;
+      border-top-right-radius:1em;
+      background-repeat: no-repeat;
+      background-position:right top;
      }  
      
-     .div3 img{
-        border: 0.1875rem solid white;
-        border-radius: 50%;
-        width: 4.375rem;
-    } 
+     .study{
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: hsl(235, 46%, 20%);
+     }
+
+     .study h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .study h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .study h4{
+      color: white;
+      padding-bottom: 15px;
+    }
+
      
      .div5 {
-        padding: 5px;
-        grid-area: two;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color:hsl(264, 64%, 52%);
- 
+      grid-area: five;
+      
+      border-radius: 5px;
+      background-image: url("images/icon-exercise.svg") ;
+      background-color: hsl(145, 58%, 55%);
+      border-top-left-radius:1em;
+      border-top-right-radius:1em;
+      background-repeat: no-repeat;
+      background-position:right top;
+      
      } 
 
-     .div5 img{
-        border: 0.1875rem solid white;
-        border-radius: 50%;
-        width: 4.375rem;
-    } 
+
+     .exercise{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: hsl(235, 46%, 20%);
+      
+     }
+
+     .exercise h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .exercise h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .exercise h4{
+      color: white;
+      padding-bottom: 10px;
+      padding-bottom: 15px;
+    }
      
      .div6 {
-        padding: 5px;
-        grid-area: two;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: hsl(43, 84%, 65%);
+        
+      grid-area: six;
+      
+      border-radius: 5px;
+      background-image: url("images/icon-social.svg") ;
+      border-top-left-radius:1em;
+       border-top-right-radius:1em;
+       background-repeat: no-repeat;
+       background-position:right top;
+       background-color: hsl(264, 64%, 52%);
  
-     } 
+      
+     }
      
-     .div6 img{
-        border: 0.1875rem solid white;
-        border-radius: 50%;
-        width: 4.375rem;
-    } 
+     
+     .social{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 10px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: hsl(235, 46%, 20%);
+     }
+     .social h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .social h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .social h4{
+      color: white;
+      padding-bottom: 10px;
+      padding-bottom: 75px;
+    }
+     
+     .div7{
+      grid-area: seven;
+      
+      border-radius: 5px;
+      background-image: url("images/icon-self-care.svg") ;
+      border-top-left-radius:1em;
+      border-top-right-radius:1em;
+      background-repeat: no-repeat;
+      background-position:right top;
+      background-color: hsl(43, 84%, 65%);
+
+     }
+     .self{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: hsl(235, 46%, 20%)
+     }
+     .self h2{
+      font-size: 18px;
+      padding-top: 10px;
+      color: white;
+    }
+
+    .self h1{
+      
+      font-weight: bolder;
+      color: white;
+    }
+
+    .self h4{
+      color: white;
+      padding-bottom: 10px;
+      padding-bottom: 75px;
+    }
+
+    @media only screen and (max-width: 1110px) {
+      .container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+      }
+    
+      
+    }
